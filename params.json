@@ -1,0 +1,7 @@
+{
+  "import": {
+    "url": "https://www.openml.org/data/download/22102279/dataset",
+    "input": "data/bronze/credit_risk_dataset.csv",
+    "output": "data/bronze/bronze.parquet"
+  }
+}

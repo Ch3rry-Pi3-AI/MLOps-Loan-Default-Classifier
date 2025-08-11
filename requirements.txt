@@ -1,0 +1,10 @@
+requests
+pandas
+numpy
+pyarrow
+fastparquet
+scikit-learn
+xgboost
+mlflow
+joblib
+python-dotenv
