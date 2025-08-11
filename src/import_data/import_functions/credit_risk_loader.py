@@ -1,7 +1,7 @@
 import io
 from pathlib import Path
 from typing import Iterable, Optional
-import pandas as pd
+import pandas as pd # type: ignore
 import requests
 
 
@@ -78,7 +78,7 @@ class CreditRiskLoader:
         if data_idx is None:
             raise ValueError("Could not find '@DATA' marker in file.")
 
-        data_lines = [ln for ln in lines[data_idx + 1:] if ln.strip()]
+        data_lines = [ln for ln in lines[data_idx + 1:] if ln.strip()] # type: ignore
         if not data_lines:
             raise ValueError("No rows found after '@DATA'.")
         
