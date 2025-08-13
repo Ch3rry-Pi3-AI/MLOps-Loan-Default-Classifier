@@ -11,7 +11,6 @@ Command-line entrypoint that orchestrates the "import" step of the pipeline:
 from .import_functions.load_params import load_params
 from .import_functions.credit_risk_loader import CreditRiskLoader
 
-
 def import_openml_to_bronze() -> None:
     # Step 1: Load configuration
     cfg = load_params("params.json")
