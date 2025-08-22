@@ -8,5 +8,13 @@
     "input": "data/bronze/bronze.parquet",
     "output": "data/silver/silver.parquet",
     "scaler": "standard"
+  },
+  "split": {
+    "input": "data/silver/silver.parquet",
+    "train_output": "data/gold/train.parquet",
+    "test_output": "data/gold/test.parquet",
+    "target_col": "loan_status",
+    "test_size": 0.1,
+    "random_state": 5910
   }
 }
